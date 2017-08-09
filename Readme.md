@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Kirill Shapovalov](https://up.htmlacademy.ru/htmlcss/18/user/38605).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
