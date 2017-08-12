@@ -7,10 +7,12 @@
   <body>
    
     <header class="main-header">
+     
+      <a class="logo" href="index.html">
+        <img src="img/" alt="City of Sedona">
+      </a>
+      
       <nav class="main-navigation">
-       <a class="logo" href="index.html">
-         <img src="img/" alt="City of Sedona">
-       </a>
        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
@@ -18,16 +20,20 @@
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <section class="intro">
-        <!-- png надписи -->
-      </section>
+      
     </header>
     
     <main class="container">
-       
-      <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    
+      <section class="intro">
+        <!-- png надписи -->
+      </section>
+     
       <section class="reasons">
+        <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+        <p>
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
         <div class="reason-left">
           <div class="reason">
             <b class="reason-title">Настоящий городок</b>
@@ -111,35 +117,55 @@
             </li>
           </ul>
         </div>
+        
       </section>
       
-      <section class="hotel-map">
-        <div class="hotel">
-          <b>Заинтересовались?</b>
-          <p>
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-          </p>
-          <a href="#" class="btn hotel-search">Поиск гостиницы в седоне</a>
-        </div>
+      <section class="hotel">
+        
+        <b>Заинтересовались?</b>
+        <p>
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <a href="#" class="btn hotel-search">Поиск гостиницы в седоне</a>
+        
         
         <div class="modal-search-form">
           <form action="#" class="search-form" method="post">
-            <!-- ФОРМА -->
+           
+            <label class="form-label" for="date-in">Дата заезда:</label>
+            <input class="form-input" type="date" name="date-in" value="2014-04-24">
+            
+            <label class="form-label" for="date-out">Дата выезда:</label>
+            <input class="form-input" type="date" name="date-out" value="2014-07-04">
+            
+            <label class="form-label" for="counter-adult">Взрослые:</label>
+            <button class="btn-minus">-</button>
+            <input class="form-input" type="text" name="counter-adult">
+            <button class="btn-plus">+</button>
+            
+            <label class="form-label" for="counter-kids">Дети:</label>
+            <button class="btn-minus">-</button>
+            <input class="form-input" type="text" name="counter-kids">
+            <button class="btn-plus">+</button>
+            
           </form>
           <a href="#" class="btn btn-search">Найти</a>
         </div>
          
-        <div class="map">
+      </section>
+      
+      <section class="map">
           <!-- iframe -->
-        </div>
       </section>
       
     </main>
     
     <footer class="main-footer">
+     
       <div class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </div>
+      
       <div class="footer-social">
         <ul>
           <li><a href="#" class="btn btn-social">Twitter</a></li>
@@ -154,6 +180,8 @@
           <!-- htmlacademy logo -->
         </a>
       </div>
+      
     </footer>
+    
   </body>
 </html>
