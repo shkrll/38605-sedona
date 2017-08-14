@@ -17,7 +17,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          <li class="current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
       
@@ -35,15 +35,15 @@
              <ul>
                <li class="filter-option">
                  <label for="pool">Бассейн</label>
-                 <input class="filter-input" type="checkbox" name="pool" checked>
+                 <input class="filter-input" type="checkbox" id="pool" checked>
                </li>
                <li class="filter-option">
                  <label for="parking">Парковка</label>
-                 <input class="filter-input" type="checkbox" name="parking">
+                 <input class="filter-input" type="checkbox" id="parking">
                </li>
                <li class="filter-option">
                  <label for="wifi">WI-FI</label>
-                 <input class="filter-input" type="checkbox" name="wifi">
+                 <input class="filter-input" type="checkbox" id="wifi">
                </li>
              </ul>
            </fieldset>
@@ -89,17 +89,17 @@
          
        </section>
        
-       <section class="catalog">
+       <section class="search">
         
-         <header class="catalog-sort">
+         <header class="search-sort">
           
-           <b>Найдено: 3</b>
+           <b>Найдено: <span>3</span></b>
            
            <div class="sort-type"> Сортировка:
              <ul>
                <li><a href="">По цене</a></li>
                <li><a href="">По типу</a></li>
-               <li class="sort-type-active"><a href="">По рейтингу</a></li>
+               <li class="active"><a href="">По рейтингу</a></li>
              </ul>
            </div>
            
@@ -110,12 +110,12 @@
            
          </header>
          
-         <main class="catalog-items">
+         <main class="search-results">
            <h1 class="visually-hidden">Гостиницы</h1>  
-           <ul class="catalog-list">
+           <ul class="search-list">
             
-             <li class="catalog-item">
-               <div class="catalog-row">
+             <li class="search-result-item">
+               <div class="search-result-row">
                 
                  <a href="#" class="hotel-pic">
                    <img src="#" alt="">
@@ -137,14 +137,14 @@
                  
                  <div class="hotel-rating">
                    <div class="rating-stars"></div>
-                   <div class="rating-value">Рейтинг: 8,5</div>
+                   <div class="rating-value">Рейтинг: <span>8,5</span></div>
                  </div>
                  
                </div>
              </li>
              
-             <li class="catalog-item">
-               <div class="catalog-row">
+             <li class="search-result-item">
+               <div class="search-result-row">
                  
                  <a href="#" class="hotel-pic">
                    <img src="#" alt="">
@@ -166,14 +166,14 @@
                  
                  <div class="hotel-rating">
                    <div class="rating-stars"></div>
-                   <div class="rating-value">Рейтинг: 8,9</div>
+                   <div class="rating-value">Рейтинг: <span>8,9</span></div>
                  </div>
                  
                </div>
              </li>
              
-             <li class="catalog-item">
-               <div class="catalog-row">
+             <li class="search-result-item">
+               <div class="search-result-row">
                  
                  <a href="#" class="hotel-pic">
                    <img src="#" alt="">
@@ -195,7 +195,7 @@
                  
                  <div class="hotel-rating">
                    <div class="rating-stars"></div>
-                   <div class="rating-value">Рейтинг: 9,2</div>
+                   <div class="rating-value">Рейтинг: <span>9,2</span></div>
                  </div>
                  
                </div>
