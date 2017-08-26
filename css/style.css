@@ -21,6 +21,16 @@ a {
   text-decoration: none;
 }
 
+input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+}
+
 .main-navigation {
   font-weight: 700;
 }
@@ -114,7 +124,7 @@ a {
 }
 
 .btn:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-search {
@@ -129,7 +139,7 @@ a {
 
 .hotel-search:active {
   background-color: #503e33;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-search {
@@ -162,6 +172,7 @@ a {
 
 .search-item input {
   font: inherit;
+  text-transform: uppercase
   
   color: #000000;
   background-color: #f2f2f2;
