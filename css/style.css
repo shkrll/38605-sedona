@@ -24,19 +24,40 @@ a {
 input {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 button {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
 }
 
 .main-navigation {
   font-weight: 700;
+  width: 1055px;
+  margin: auto;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -66,11 +87,24 @@ button {
 .reason {
   text-align: center;
   line-height: 21px;
+  width: 400px;
+  height: 256px;
+}
+
+.reason-left {
+  display: flex;
+}
+
+.reason-right {
+  display: flex;
 }
 
 .reasons-list {
+  display: flex;
   list-style: none;
   background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -93,6 +127,8 @@ button {
 .feature-item {
   text-align: center;
   line-height: 21px;
+  width: 400px;
+  height: 330px;
 }
 
 .feature-title {
@@ -102,7 +138,10 @@ button {
 }
 
 .features-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -192,6 +231,8 @@ button {
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-hashtag a{
@@ -211,9 +252,18 @@ button {
 .filters {
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
-  
+  margin: auto;
+  width: 1055px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.filter-columns {
+  display: flex;
+}
+
+.filter-columns fieldset:nth-child(3) {
+  margin-left: auto;
 }
 
 .filters legend {
@@ -250,6 +300,12 @@ button {
   color: #000000;
 }
 
+.search-sort {
+  display: flex;
+  width: 1055px;
+  margin: auto;
+}
+
 .search-sort b {
   font-weight: 700;
   font-size: 21px;
@@ -259,6 +315,12 @@ button {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-arrows {
+  margin-left: auto;
 }
 
 .sort-type a{
@@ -276,8 +338,21 @@ button {
   color: #000000;
 }
 
+.search-results {
+  width: 1055px;
+  margin: auto;
+}
+
 .search-list {
   list-style: none;
+}
+
+.search-result-row {
+  display: flex;
+}
+
+.hotel-rating {
+  margin-left: auto;
 }
 
 .hotel-title {
@@ -321,9 +396,18 @@ button {
 
 .btn-order:active {
   background-color: #503e33;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-academy {
   background: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
