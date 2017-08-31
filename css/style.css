@@ -8,7 +8,7 @@ body {
   color: #333333;
   text-transform: uppercase;
   
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .intro {
@@ -40,24 +40,39 @@ button {
 .container {
   width: 1200px;
   margin: auto;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .logo {
   position: absolute;
+  left: 50%;
+  margin-left: -35px;
 }
 
 .main-navigation {
   font-weight: 700;
-  width: 1055px;
-  margin: auto;
+  padding: 0 72px;
 }
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.site-navigation li {
+  width: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-right: 240px;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -75,6 +90,10 @@ button {
 
 .current a {
   color: #766357;
+}
+
+.sedona-title {
+  
 }
 
 .reasons h1 {
@@ -109,7 +128,7 @@ button {
 
 
 .reason-title {
-  font-size: 14px;
+  font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   color: #000000;
@@ -132,7 +151,7 @@ button {
 }
 
 .feature-title {
-  font-size: 14px;
+  font-size: 21px;
   font-weight: bold;
   color: #000000;
 }
@@ -207,6 +226,8 @@ button {
 
 .modal-search-form {
   font-weight: 700;
+  width: 568px;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .search-item input {
@@ -232,7 +253,7 @@ button {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-hashtag a{
@@ -252,8 +273,7 @@ button {
 .filters {
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
-  margin: auto;
-  width: 1055px;
+  padding: 0 72px;
   line-height: 21px;
   color: #ffffff;
 }
@@ -302,16 +322,19 @@ button {
 
 .search-sort {
   display: flex;
-  width: 1055px;
-  margin: auto;
+  padding: 0 72px;
 }
 
 .search-sort b {
   font-weight: 700;
   font-size: 21px;
+  padding-right: 50px;
 }
 
 .sort-type ul {
+  display: flex;
+  width: 353px;
+  justify-content: space-between;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
@@ -339,12 +362,13 @@ button {
 }
 
 .search-results {
-  width: 1055px;
-  margin: auto;
+  padding: 0 72px;
 }
 
 .search-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .search-result-row {
