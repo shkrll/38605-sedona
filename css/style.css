@@ -10,12 +10,6 @@ body {
   
   background-color: #f2f2f2;
 }
-
-.intro {
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
   
 a {
   text-decoration: none;
@@ -47,23 +41,24 @@ button {
 .logo {
   position: absolute;
   left: 50%;
-  margin-left: -35px;
+  margin-left: -69px;
 }
 
 .main-navigation {
   font-weight: 700;
   padding: 0 72px;
+  line-height: 26px
 }
 
 .site-navigation {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
 }
 
 .site-navigation li {
-  width: 20%;
+  width: 240px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -92,30 +87,51 @@ button {
   color: #766357;
 }
 
+.intro {
+  background: url("../img/background-photo.jpg") no-repeat 0 -57px;
+}
+
+.weaves {
+  height: 57px;
+  width: 1200px;
+  background: url("../img/weaves.png") no-repeat;
+}
+
 .sedona-title {
-  
+  display: block;
+  margin: 0 auto;
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+
+.reasons {
+  text-align: center;
 }
 
 .reasons h1 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
 
+.reasons p{
+  margin: 0;
+}
+
 .reason {
-  text-align: center;
   line-height: 21px;
   width: 400px;
-  height: 256px;
+  min-height: 256px;
 }
 
-.reason-left {
+.reason-img {
   display: flex;
 }
 
-.reason-right {
-  display: flex;
+.reason-img img {
+  display: block;
 }
 
 .reasons-list {
@@ -134,8 +150,7 @@ button {
   color: #000000;
 }
 
-.reason-left .reason,
-.reason-right .reason {
+.reason-img .reason {
   background-color: #81b3d2;
 }
 
@@ -144,10 +159,9 @@ button {
 }
 
 .feature-item {
-  text-align: center;
   line-height: 21px;
   width: 400px;
-  height: 330px;
+  min-height: 330px;
 }
 
 .feature-title {
@@ -253,7 +267,11 @@ button {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: space-around;
+}
+
+.footer-hashtag {
+  width: 400px;
+  text-align: center;
 }
 
 .footer-hashtag a{
@@ -263,11 +281,17 @@ button {
 }
 
 .footer-social {
+  width: 400px;
   text-align: center;
 }
 
 .footer-social ul {
   list-style: none;
+}
+
+.footer-copyright {
+  width: 400px;
+  text-align: center;
 }
 
 .filters {
@@ -361,7 +385,7 @@ button {
   color: #000000;
 }
 
-.search-results {
+.search-result-item {
   padding: 0 72px;
 }
 
@@ -371,7 +395,7 @@ button {
   margin: 0;
 }
 
-.search-result-row {
+.search-result-item {
   display: flex;
 }
 
