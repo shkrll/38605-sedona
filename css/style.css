@@ -15,6 +15,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 input {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -29,6 +36,7 @@ button {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+  
 }
 
 .container {
@@ -62,7 +70,7 @@ button {
 }
 
 .site-navigation li:nth-child(2) {
-  padding-right: 240px;
+  padding-right: 96px;
 }
 
 .site-navigation li:nth-child(3),
@@ -188,6 +196,7 @@ button {
 
   background-color: #81b3d2;
   border: none;
+  padding: 3px 17px;
 }
 
 .btn:hover,
@@ -202,6 +211,8 @@ button {
 .hotel-search {
   background-color: #766357;
   font-size: 21px;
+  line-height: 26px;
+  padding: 30px 140px;
 }
 
 .hotel-search:hover,
@@ -216,6 +227,8 @@ button {
 
 .btn-search {
   font-size: 21px;
+  line-height: 26px;
+  padding: 16px 196px;
 }
 
 .minus,
@@ -264,9 +277,22 @@ button {
   outline: none;
 }
 
+.map {
+  display: block;
+  height: 593px;
+  position: relative;
+}
+
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
+  align-items: center;
+  min-height: 120px;
+}
+
+.index-footer {
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-hashtag {
@@ -286,13 +312,51 @@ button {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 151px;
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  
+  background-color: #81b3d2;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  background-color: #669ec0;
+}
+
+.btn-social:active path {
+  opacity: 0.3;
 }
 
 .footer-copyright {
   width: 400px;
   text-align: center;
 }
+
+.footer-copyright .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 197px;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
 
 .filters {
   background-image: url("../img/background-filter.jpg");
@@ -332,6 +396,7 @@ button {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  padding: 5px 31px 5px 35px;
   
   color: #ffffff;
   line-height: 21px;
@@ -399,6 +464,15 @@ button {
   display: flex;
 }
 
+.hotel-pic {
+  height: 90px;
+}
+
+.hotel-pic img {
+  width: 135px;
+  height: 90px;
+}
+
 .hotel-rating {
   margin-left: auto;
 }
@@ -428,8 +502,10 @@ button {
 }
 
 .rating-value {
+  padding: 3px 13px 3px 16px;
   background-color: #f2f2f2;
   
+  line-height: 21px;
   color: #666666;
 }
 
@@ -451,11 +527,20 @@ button {
   background: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
