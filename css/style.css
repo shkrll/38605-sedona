@@ -46,9 +46,13 @@ button {
   background-color: #ffffff;
 }
 
+.main-header {
+  position: relative;
+}
+
 .logo {
   position: absolute;
-  left: 50%;
+  left: 600px;
   margin-left: -69px;
 }
 
@@ -97,6 +101,7 @@ button {
 
 .intro {
   background: url("../img/background-photo.jpg") no-repeat 0 -57px;
+  margin-bottom: 62px;
 }
 
 .weaves {
@@ -118,6 +123,7 @@ button {
 
 .reasons h1 {
   margin: 0;
+  margin-bottom: 32px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -128,18 +134,45 @@ button {
   margin: 0;
 }
 
+.reasons h1 + p {
+  margin-bottom: 53px;
+}
+
 .reason {
   line-height: 21px;
   width: 400px;
   min-height: 256px;
 }
 
+.reason b {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 28px;
+  
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reason p {
+  margin: 0 45px;
+  margin-bottom: 24px;
+}
+
 .reason-img {
   display: flex;
+  color: #ffffff;
 }
 
 .reason-img img {
   display: block;
+}
+
+.reason-img b {
+  color: #ffffff;
 }
 
 .reasons-list {
@@ -150,19 +183,16 @@ button {
   padding: 0;
 }
 
-
-.reason-title {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
-}
-
 .reason-img .reason {
   background-color: #81b3d2;
 }
 
-.features-row {
+.features {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
   line-height: 21px;
 }
 
@@ -172,17 +202,35 @@ button {
   min-height: 330px;
 }
 
-.feature-title {
+.feature-item svg {
+  display: block;
+  margin: 60px auto 32px auto;
+}
+
+.feature-item b {
+  display: block;
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
 }
 
-.features-list {
-  display: flex;
-  list-style: none;
+.hotel {
+  text-align: center;
+}
+
+.hotel b {
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 55px 0 30px 0;
+}
+
+.hotel p {
   margin: 0;
-  padding: 0;
+  margin-bottom: 50px;
+  line-height: 24px;
 }
 
 .btn {
@@ -209,10 +257,12 @@ button {
 }
 
 .hotel-search {
+  display: block;
+  padding: 32px 140px;
+  margin: 0 auto;
   background-color: #766357;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 140px;
 }
 
 .hotel-search:hover,
@@ -226,6 +276,8 @@ button {
 }
 
 .btn-search {
+  display: block;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   padding: 16px 196px;
@@ -279,8 +331,11 @@ button {
 
 .map {
   display: block;
-  height: 593px;
   position: relative;
+}
+
+.map img {
+  display: block;
 }
 
 .main-footer {
@@ -355,6 +410,10 @@ button {
 
 .footer-copyright p {
   margin: 0;
+}
+
+.footer-copyright svg {
+  display: block;
 }
 
 
