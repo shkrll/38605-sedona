@@ -244,7 +244,7 @@ button {
 
   background-color: #81b3d2;
   border: none;
-  padding: 3px 17px;
+  padding: 3px 10px;
 }
 
 .btn:hover,
@@ -389,6 +389,7 @@ calendar svg:focus  path{
 .counter-input {
   width: 26px;
   padding: 4px;
+  text-align: center;
 }
 
 .search-item input {
@@ -498,6 +499,15 @@ calendar svg:focus  path{
   display: block;
 }
 
+.footer-copyright svg:hover path,
+.footer-copyright svg:focus path {
+  fill: #81b3d2;
+}
+
+.footer-copyright svg:active path {
+  fill: #bdbbbc;
+}
+
 
 .filters {
   background-image: url("../img/background-filter.jpg");
@@ -507,41 +517,193 @@ calendar svg:focus  path{
   color: #ffffff;
 }
 
-.filter-columns {
+.filter {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 4px;
 }
 
-.filter-columns fieldset:nth-child(3) {
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-right: 115px;
+}
+
+.filter fieldset:nth-child(3) {
   margin-left: auto;
 }
 
 .filters legend {
+  margin-bottom: 30px;
   font-size: 16px;
   font-weight: 700;
 }
 
 .filter ul {
+  text-align: left;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.filter fieldset {
+.filter-option {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.filter-input {
+  visibility: hidden;
+}
+
+.filter-label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.filter-input + .filter-label::before {
+  content: "";
+  
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+}
+
+.filter-input:checked + .filter-label::before {
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+
+.filter-input:disabled + .filter-label::before {
+  opacity: 0.3;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+  
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
   border: none;
 }
 
-.filter-input:disabled {
-  color: #6a6a6a;
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
 }
 
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  transform: scale(1.2);
+}
 
 .btn-show {
+  display: block;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  padding: 5px 31px 5px 35px;
+  width: 137px;
+  padding: 6px 10px;
+  margin: 0 auto;
   
   color: #ffffff;
   line-height: 21px;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .btn-show:hover {
@@ -552,7 +714,8 @@ calendar svg:focus  path{
 
 .search-sort {
   display: flex;
-  padding: 0 72px;
+  padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .search-sort b {
@@ -561,10 +724,11 @@ calendar svg:focus  path{
   padding-right: 50px;
 }
 
-.sort-type ul {
+.sort-type {
   display: flex;
   width: 353px;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
@@ -573,7 +737,28 @@ calendar svg:focus  path{
 }
 
 .sort-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 34px;
   margin-left: auto;
+}
+
+.sort-arrows svg {
+  display: block;
+}
+
+.sort-arrows svg:hover path,
+.sort-arrows svg:focus path{
+  fill: #231f20;
+}
+
+.sort-arrows svg:active path{
+  fill: #81b3d2;
+}
+
+.sort-arrows .active path{
+  fill: #81b3d2;
 }
 
 .sort-type a{
@@ -591,8 +776,9 @@ calendar svg:focus  path{
   color: #000000;
 }
 
-.search-result-item {
-  padding: 0 72px;
+.sort-type .active {
+  color: #81b3d2;
+  border: none;
 }
 
 .search-list {
@@ -601,24 +787,80 @@ calendar svg:focus  path{
   margin: 0;
 }
 
+.search-list li {
+  display: flex;
+  padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
 .search-result-item {
   display: flex;
 }
 
 .hotel-pic {
+  margin-right: 30px;
   height: 90px;
 }
 
 .hotel-pic img {
+  display: block;
   width: 135px;
   height: 90px;
 }
 
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-info p {
+  margin: 0;
+  margin-bottom: 16px; 
+}
+
+.hotel-info .wrapper {
+  display: flex;
+}
+
+.hotel-info .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+
 .hotel-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-left: auto;
 }
 
+.rating-stars {
+  display: flex;
+  
+}
+
+.rating-stars span {
+  display: block;
+  width: 18px;
+  height: 17px;
+  margin-right: 5px;
+  background: url("../img/star.svg") repeat-x;
+}
+
+.rating-stars span:last-child {
+  margin-right: 0;
+}
+
 .hotel-title {
+  margin: 0;
+  margin-top: -4px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -637,20 +879,22 @@ calendar svg:focus  path{
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel-info {
-  line-height: 21px;
-  color: #333333;
-}
-
 .rating-value {
-  padding: 3px 13px 3px 16px;
+  width: 90px;
+  padding: 3px 10px;
+  text-align: center;
   background-color: #f2f2f2;
   
   line-height: 21px;
   color: #666666;
 }
 
+.btn-more {
+  width: 90px;
+}
+
 .btn-order {
+  width: 122px;
   background-color: #766357;
 }
 
