@@ -762,7 +762,7 @@ calendar svg:focus  path{
   display: flex;
   width: 353px;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
