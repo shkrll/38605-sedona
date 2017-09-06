@@ -382,7 +382,7 @@ calendar svg:focus  path{
 
 .form-input {
   display: block;
-  width: 303px;
+  width: 300px;
   margin: 0;
   padding: 4px 30px 4px 13px;
 }
@@ -391,7 +391,7 @@ calendar svg:focus  path{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 224px;
+  width: 222px;
 }
 
 .counter-kids {
@@ -733,6 +733,12 @@ calendar svg:focus  path{
 }
 
 .btn-show:hover {
+  background-color: #ffffff;
+  
+  color: #000000;
+}
+
+.btn-show:active {
   background-color: #ffffff;
   
   color: #000000;
