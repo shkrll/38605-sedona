@@ -2,16 +2,14 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
-  
   background-color: #f2f2f2;
 }
-  
+
 a {
   text-decoration: none;
 }
@@ -20,8 +18,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
 
 input {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -37,12 +33,12 @@ button {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
-  
 }
 
 .container {
   width: 1200px;
   margin: auto;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
@@ -65,6 +61,8 @@ button {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
@@ -135,7 +133,7 @@ button {
   color: #000000;
 }
 
-.reasons p{
+.reasons p {
   margin: 0;
 }
 
@@ -155,7 +153,6 @@ button {
   padding: 0;
   margin-top: 48px;
   margin-bottom: 22px;
-  
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -168,6 +165,8 @@ button {
 }
 
 .reason-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #ffffff;
 }
@@ -181,6 +180,8 @@ button {
 }
 
 .reasons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   background-color: #eeeeee;
@@ -193,18 +194,28 @@ button {
 }
 
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  
   line-height: 21px;
 }
 
 .feature-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 56px;
   margin-bottom: 79px;
@@ -245,13 +256,11 @@ button {
 
 .btn {
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   font-weight: 700;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #81b3d2;
   border: none;
   padding: 3px 10px;
@@ -298,7 +307,6 @@ button {
   padding: 16px 32px;
   font-size: 21px;
   line-height: 26px;
-  
 }
 
 .minus,
@@ -343,12 +351,19 @@ button {
   padding: 55px 55px;
   background-color: #ffffff;
   font-weight: 700;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .search-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 29px;
 }
@@ -365,7 +380,7 @@ button {
 }
 
 .calendar svg:hover path,
-calendar svg:focus  path{
+calendar svg:focus path {
   fill: #000000;
 }
 
@@ -388,15 +403,27 @@ calendar svg:focus  path{
 }
 
 .counter-adult {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 225px;
 }
 
 .counter-kids {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 179px;
 }
@@ -412,6 +439,7 @@ calendar svg:focus  path{
 }
 
 .counter-input {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 4px;
@@ -421,7 +449,6 @@ calendar svg:focus  path{
 .search-item input {
   font: inherit;
   text-transform: uppercase;
-  
   color: #000000;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -449,7 +476,11 @@ calendar svg:focus  path{
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 120px;
 }
@@ -464,7 +495,7 @@ calendar svg:focus  path{
   text-align: center;
 }
 
-.footer-hashtag a{
+.footer-hashtag a {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
@@ -476,8 +507,13 @@ calendar svg:focus  path{
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 151px;
   list-style: none;
@@ -486,12 +522,17 @@ calendar svg:focus  path{
 }
 
 .btn-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 46px;
   height: 48px;
-  
   background-color: #81b3d2;
 }
 
@@ -510,8 +551,14 @@ calendar svg:focus  path{
 }
 
 .footer-copyright .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
   width: 197px;
@@ -534,7 +581,6 @@ calendar svg:focus  path{
   fill: #bdbbbc;
 }
 
-
 .filters {
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
@@ -544,6 +590,8 @@ calendar svg:focus  path{
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 28px;
   padding-bottom: 4px;
@@ -577,8 +625,15 @@ calendar svg:focus  path{
 }
 
 .filter-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-bottom: 26px;
 }
@@ -595,12 +650,10 @@ calendar svg:focus  path{
 
 .filter-input + .filter-label::before {
   content: "";
-  
   position: absolute;
   left: 0;
   width: 26px;
   height: 26px;
-  
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
@@ -612,9 +665,12 @@ calendar svg:focus  path{
   opacity: 0.3;
 }
 
+.filter-input:focus + .filter-label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -622,12 +678,9 @@ calendar svg:focus  path{
 
 .price-controls {
   position: relative;
-  
   height: 32px;
   margin-bottom: 20px;
-  
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -637,21 +690,18 @@ calendar svg:focus  path{
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -664,43 +714,37 @@ calendar svg:focus  path{
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -714,6 +758,7 @@ calendar svg:focus  path{
 }
 
 .range-toggle:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -726,26 +771,26 @@ calendar svg:focus  path{
   padding: 6px 10px;
   margin: 0 auto;
   margin-right: 96px;
-  
   color: #ffffff;
   line-height: 21px;
   font-weight: normal;
   cursor: pointer;
 }
 
-.btn-show:hover {
+.btn-show:hover,
+.btn-show:focus {
   background-color: #ffffff;
-  
   color: #000000;
 }
 
 .btn-show:active {
   background-color: #ffffff;
-  
   color: #000000;
 }
 
 .search-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px 72px;
   padding-top: 32px;
@@ -758,10 +803,33 @@ calendar svg:focus  path{
   padding-right: 47px;
 }
 
-.sort-type {
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: 353px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sort span {
+  display: block;
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.sort-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 238px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style: none;
   font-size: 12px;
@@ -771,8 +839,14 @@ calendar svg:focus  path{
 }
 
 .sort-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 34px;
   margin-left: auto;
@@ -783,19 +857,19 @@ calendar svg:focus  path{
 }
 
 .sort-arrows svg:hover path,
-.sort-arrows svg:focus path{
+.sort-arrows svg:focus path {
   fill: #231f20;
 }
 
-.sort-arrows svg:active path{
+.sort-arrows svg:active path {
   fill: #81b3d2;
 }
 
-.sort-arrows .active path{
+.sort-arrows .active path {
   fill: #81b3d2;
 }
 
-.sort-type a{
+.sort-type a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
@@ -822,13 +896,16 @@ calendar svg:focus  path{
 }
 
 .search-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-
 .search-result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -844,8 +921,15 @@ calendar svg:focus  path{
 }
 
 .hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   line-height: 21px;
   color: #333333;
@@ -853,31 +937,50 @@ calendar svg:focus  path{
 
 .hotel-info p {
   margin: 0;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 .hotel-info .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .hotel-info .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-right: 6px;
 }
 
 .hotel-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   margin-left: auto;
 }
 
 .rating-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  
 }
 
 .rating-stars span {
@@ -918,7 +1021,6 @@ calendar svg:focus  path{
   padding: 3px 10px;
   text-align: center;
   background-color: #f2f2f2;
-  
   line-height: 21px;
   color: #666666;
 }
@@ -950,15 +1052,13 @@ calendar svg:focus  path{
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
