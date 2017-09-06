@@ -527,7 +527,7 @@ calendar svg:focus  path{
 
 .filter {
   display: flex;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 4px;
 }
 
@@ -538,7 +538,7 @@ calendar svg:focus  path{
 }
 
 .filter fieldset:first-child {
-  margin-right: 115px;
+  margin-right: 118px;
 }
 
 .filter fieldset:nth-child(3) {
@@ -546,7 +546,7 @@ calendar svg:focus  path{
 }
 
 .filters legend {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   font-size: 16px;
   font-weight: 700;
 }
@@ -562,7 +562,8 @@ calendar svg:focus  path{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 26px;
 }
 
 .filter-input {
