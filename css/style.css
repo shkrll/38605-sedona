@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   
@@ -54,6 +55,7 @@ button {
   position: absolute;
   left: 600px;
   margin-left: -69px;
+  z-index: 2;
 }
 
 .main-navigation {
@@ -301,11 +303,22 @@ button {
 
 .minus,
 .plus {
+  position: absolute;
   padding: 6px 0;
   width: 38px;
   font-size: 24px;
   color: #a9a9a9;
-  background-color: #f2f2f2;
+  background-color: transparent;
+}
+
+.minus {
+  top: 0;
+  left: 0;
+}
+
+.plus {
+  top: 0;
+  right: 0;
 }
 
 .minus:hover,
@@ -313,13 +326,13 @@ button {
 .minus:focus,
 .plus:focus {
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: transparent;
 }
 
 .minus:active,
 .plus:active {
   color: #81b3d2;
-  background-color: #f2f2f2;
+  background-color: transparent;
 }
 
 .modal-search-form {
@@ -336,7 +349,6 @@ button {
 .search-item {
   display: flex;
   justify-content: space-between;
-  width: 458px;
   align-items: center;
   margin-bottom: 29px;
 }
@@ -366,7 +378,6 @@ calendar svg:focus  path{
   text-align: left;
   margin: 0;
   padding: 0;
-  width: 112px;
 }
 
 .form-input {
@@ -378,9 +389,9 @@ calendar svg:focus  path{
 
 .counter-adult {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 226px;
+  width: 224px;
 }
 
 .counter-kids {
@@ -390,19 +401,26 @@ calendar svg:focus  path{
   width: 179px;
 }
 
-.counter-kids label {
-  width: 65px;
+.counter-adult .wrapper {
+  position: relative;
+  width: 114px;
+}
+
+.counter-kids .wrapper {
+  position: relative;
+  width: 114px;
 }
 
 .counter-input {
-  width: 26px;
+  box-sizing: border-box;
+  width: 100%;
   padding: 4px;
   text-align: center;
 }
 
 .search-item input {
   font: inherit;
-  text-transform: uppercase
+  text-transform: uppercase;
   
   color: #000000;
   background-color: #f2f2f2;
@@ -562,7 +580,6 @@ calendar svg:focus  path{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: center;
   margin-bottom: 26px;
 }
 
