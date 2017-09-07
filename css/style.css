@@ -708,7 +708,8 @@ calendar svg:focus path {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 67px;
+  padding-left: 65px;
+  padding-right: 2px;
 }
 
 .price-controls input {
