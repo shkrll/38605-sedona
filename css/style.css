@@ -103,6 +103,7 @@ button {
   position: relative;
   background: url("../img/background-photo.jpg") no-repeat 0 -57px;
   margin-bottom: 62px;
+  background-color: #a6c9df;
 }
 
 .weaves {
@@ -127,6 +128,7 @@ button {
 .reasons h1 {
   margin: 0;
   margin-bottom: 26px;
+  padding: 0 350px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -135,6 +137,7 @@ button {
 
 .reasons p {
   margin: 0;
+  padding: 0 47px;
 }
 
 .reasons h1 + p {
@@ -150,7 +153,7 @@ button {
 .reason b {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 125px;
   margin-top: 48px;
   margin-bottom: 22px;
   font-size: 21px;
@@ -160,7 +163,6 @@ button {
 }
 
 .reason p {
-  margin: 0 45px;
   margin-bottom: 22px;
 }
 
@@ -169,6 +171,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .reason-img img {
@@ -189,8 +192,8 @@ button {
   padding: 0;
 }
 
-.reason-img .reason {
-  background-color: #81b3d2;
+.reasons-list p {
+  padding: 0 68px;
 }
 
 .features {
@@ -232,6 +235,7 @@ button {
   margin: 0;
   margin-top: 32px;
   margin-bottom: 24px;
+  padding: 0 125px;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
@@ -246,12 +250,14 @@ button {
   font-size: 30px;
   line-height: 36px;
   margin: 52px 0 23px 0;
+  padding: 0 40px;
 }
 
 .hotel p {
   margin: 0;
   margin-bottom: 46px;
   line-height: 24px;
+  padding: 0 40px;
 }
 
 .btn {
@@ -383,12 +389,12 @@ button {
   right: 9px;
 }
 
-.calendar svg:hover path,
-calendar svg:focus path {
+.calendar-svg:hover path,
+.calendar-svg:focus path {
   fill: #000000;
 }
 
-.calendar svg:active path {
+.calendar-svg:active path {
   fill: #81b3d2;
 }
 
@@ -446,7 +452,7 @@ calendar svg:focus path {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 4px;
+  padding: 4px 36px;
   text-align: center;
 }
 
@@ -472,6 +478,8 @@ calendar svg:focus path {
 .map {
   display: block;
   position: relative;
+  line-height: 0;
+  background-color: #cbdda9;
 }
 
 .map img {
@@ -486,7 +494,7 @@ calendar svg:focus path {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 120px;
+  padding: 36px 0;
 }
 
 .index-footer {
@@ -518,11 +526,18 @@ calendar svg:focus path {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 151px;
+  justify-content: center;
   list-style: none;
   margin: 0 auto;
   padding: 0;
+}
+
+.footer-social li {
+  margin-right: 6px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
 }
 
 .btn-social {
@@ -576,18 +591,19 @@ calendar svg:focus path {
   display: block;
 }
 
-.footer-copyright svg:hover path,
-.footer-copyright svg:focus path {
+.footer-copyright-svg:hover path,
+.footer-copyright-svg:focus path {
   fill: #81b3d2;
 }
 
-.footer-copyright svg:active path {
+.footer-copyright-svg:active path {
   fill: #bdbbbc;
 }
 
 .filters {
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
+  background-color: #2b3e48;
   padding: 0 72px;
   line-height: 21px;
   color: #ffffff;
@@ -866,16 +882,16 @@ calendar svg:focus path {
   display: block;
 }
 
-.sort-arrows svg:hover path,
-.sort-arrows svg:focus path {
+.sort-arrow-svg:hover path,
+.sort-arrow-svg:focus path {
   fill: #231f20;
 }
 
-.sort-arrows svg:active path {
+.sort-arrow-svg:active path {
   fill: #81b3d2;
 }
 
-.sort-arrows .active path {
+.active-arrow path {
   fill: #81b3d2;
 }
 
@@ -920,8 +936,9 @@ calendar svg:focus path {
 }
 
 .hotel-pic {
+  display: block;
   margin-right: 30px;
-  height: 90px;
+  width: 135px;
 }
 
 .hotel-pic img {
@@ -941,6 +958,7 @@ calendar svg:focus path {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 750px;
   line-height: 21px;
   color: #333333;
 }
@@ -1058,13 +1076,20 @@ calendar svg:focus path {
   background: none;
 }
 
+@-webkit-keyframes roll {
+  0% {-webkit-transform: translateY(-86px);transform: translateY(-86px); opacity: 0;}
+  100% {-webkit-transform: translateY(0);transform: translateY(0); opacity: 1;}
+}
+
 @keyframes roll {
-  0% {transform: translateY(-86px); opacity: 0;}
-  100% {transform: translateY(0); opacity: 1;}
+  0% {-webkit-transform: translateY(-86px);transform: translateY(-86px); opacity: 0;}
+  100% {-webkit-transform: translateY(0);transform: translateY(0); opacity: 1;}
 }
 
 .roll {
+  -webkit-animation-name: roll;
   animation-name: roll;
+  -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
 }
 
