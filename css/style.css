@@ -140,7 +140,7 @@ button {
   padding: 0 47px;
 }
 
-.reasons h1 + p {
+.reasons h1+p {
   margin-bottom: 50px;
 }
 
@@ -671,7 +671,7 @@ button {
   cursor: pointer;
 }
 
-.filter-input + .filter-label::before {
+.filter-input+.filter-label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -680,15 +680,15 @@ button {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-.filter-input:checked + .filter-label::before {
+.filter-input:checked+.filter-label::before {
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
-.filter-input:disabled + .filter-label::before {
+.filter-input:disabled+.filter-label::before {
   opacity: 0.3;
 }
 
-.filter-input:focus + .filter-label::before {
+.filter-input:focus+.filter-label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
 
@@ -1081,13 +1081,29 @@ button {
 }
 
 @-webkit-keyframes roll {
-  0% {-webkit-transform: translateY(-86px);transform: translateY(-86px); opacity: 0;}
-  100% {-webkit-transform: translateY(0);transform: translateY(0); opacity: 1;}
+  0% {
+    -webkit-transform: translateY(-86px);
+    transform: translateY(-86px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes roll {
-  0% {-webkit-transform: translateY(-86px);transform: translateY(-86px); opacity: 0;}
-  100% {-webkit-transform: translateY(0);transform: translateY(0); opacity: 1;}
+  0% {
+    -webkit-transform: translateY(-86px);
+    transform: translateY(-86px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .roll {
